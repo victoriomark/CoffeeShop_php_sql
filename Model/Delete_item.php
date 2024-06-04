@@ -1,0 +1,1 @@
+<?phpinclude '../Database/Connect.php';global $conn;if($_SERVER['REQUEST_METHOD'] === 'POST'){    $ID = $_POST['Id'];    $Query = "DELETE  FROM cart_tb WHERE Cart_id = $ID";    mysqli_query($conn,$Query);}
